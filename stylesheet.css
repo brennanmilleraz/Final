@@ -3,19 +3,72 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 
 }
 .navbar a {
-    float: left;
+    float: right;
     display: block;
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: left;
+    padding: 30px 50px;
     text-decoration: none;
+    font-size: 110%;
 }
-.main {
-    margin-top: 100px;
+.navbar a:hover{
+    background-color: rgba(0, 0, 0, 0.41);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+}
+.navbar h1 {
+    float: left;
+    color: #f2f2f2;
+    padding-left: 40px;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+}
+.wrapper {
+    height: 100%;
+    
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+.fixed-bg {
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+.fixed-bg h1{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 300%;
+}
+.bg-1 {
+    background-image: url(bg1.jpeg)
+}
+.scroll-bg1 {
+    background-color: white;
+    margin: 80px 80px;
+    border-radius: 20px;
+}
+.scroll-bg1 h2 {
+    text-align: center;
+    padding: 40px;
+    padding-top: 80px;
+}
+.scroll-bg1 p {
+    margin: 20px 60px;
+    padding-bottom: 1000px;
 }
