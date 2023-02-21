@@ -60,16 +60,37 @@ html,body{
     vertical-align: middle;
     font-size: 300%;
 }
+.moving-bg{
+    height: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    width: 100%;
+}
+.black-bg {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    color: white;
+}
 .bg-1 {
     background-image: url(bg1.jpeg)
 }
 .bg-2 {
     background-image: url(bg2.jpeg);
 }
+.bg-3 {
+    background-image: url(bg3.jpg);
+}
 .scroll-bg1 {
     background-color: white;
     margin: 80px 80px;
     border-radius: 20px;
+    word-spacing: 1px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
 }
 .scroll-bg1 h2 {
     text-align: center;
