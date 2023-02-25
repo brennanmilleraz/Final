@@ -195,12 +195,11 @@ html,body{
     margin: auto;
 }
 .scroll .container img {
-    float: center;
-    width: 700px;
     height: 250px;
     object-fit: cover;
     image-rendering: auto;
     overflow: hidden;
+    margin: auto;
 }
 .scroll .content {
     margin-top: 200px;
