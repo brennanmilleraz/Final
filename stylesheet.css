@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(230, 230, 230);
+}
 .navbar {
     overflow: hidden;
     position: fixed;
@@ -28,15 +37,6 @@
     height: 80px;
     object-fit: cover;
     image-rendering: auto;
-}
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-html,body{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: rgb(230, 230, 230);
 }
 .wrapper {
     height: 100%;
@@ -87,7 +87,10 @@ html,body{
 }
 .scroll-bg1 {
     background-color: white;
-    margin: 80px 80px;
+    margin: auto;
+    margin-top: 60px;
+    min-width: 800px;
+    max-width: 1100px;
     border-radius: 20px;
     word-spacing: 1px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
@@ -204,4 +207,18 @@ html,body{
 .scroll .content {
     margin-top: 200px;
     color: white;
+}
+.scroll-bg1 span.me {
+    text-orientation: sideways-right;
+    font-size: 200%;
+    font-weight: bold;
+}
+.scroll-bg1 span.me text {
+    fill: url(bg2.jpeg);
+}
+@media (max-width: 950px) {
+    .navbar a {
+        
+    }
+
 }
