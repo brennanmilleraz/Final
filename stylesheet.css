@@ -58,7 +58,6 @@ label[for="navCheck"] {
 
 .nav-list li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 }
 .wrapper {
     height: 100%;
@@ -76,11 +75,19 @@ label[for="navCheck"] {
     width: 100%;
     text-align: center;
     display: table;
+
 }
 .fixed-bg h1{
     display: table-cell;
     vertical-align: middle;
     font-size: 300%;
+}
+.subheader{
+    height: 25%;
+    font-weight: bold;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
 }
 .moving-bg{
     height: 100%;
@@ -109,8 +116,7 @@ label[for="navCheck"] {
 }
 .scroll-bg1 {
     background-color: white;
-    margin: auto;
-    margin-top: 60px;
+    margin: 60px auto;
     max-width: 1100px;
     border-radius: 20px;
     word-spacing: 1px;
@@ -120,6 +126,8 @@ label[for="navCheck"] {
     text-align: center;
     padding-top: 80px;
     font-size: 500%;
+    font-weight: bold;
+    letter-spacing: 0;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -164,7 +172,7 @@ label[for="navCheck"] {
 }
 .card:nth-child(even)::before {
     right: 0;
-    top: 0px;
+    top: .5px;
     bottom: 0px;
     border-width: 5px 5px 5px 0;
     border-radius: 0 50px 50px 0;
@@ -241,6 +249,40 @@ label[for="navCheck"] {
 }
 .scroll-bg1 span.me text {
     fill: url(bg2.jpeg);
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+button[type=submit] {
+    background-color: #1F97FD;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+  
+button[type=submit]:hover {
+    background-color: #1F84DC;
+}
+  
+.form {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    padding-top: 40px;
+}
+#subject {
+    height: 200px;
 }
 @media (max-width: 950px) {
 
