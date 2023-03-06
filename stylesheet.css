@@ -159,6 +159,7 @@ label[for="navCheck"] {
     background: var(white);
     margin: 20px auto;
     padding: 20px;
+    max-width: 800px;
 }
 .card {
     justify-content: center;
@@ -372,6 +373,9 @@ button[type=submit]:hover {
         top      : 50%;
         transform: rotate(45deg);
     }
-
-
+}
+@media (max-width: 650px) {
+    .large img {
+        object-position: 0;
+    }
 }
