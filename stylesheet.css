@@ -29,6 +29,20 @@ header {
     object-fit: cover;
     image-rendering: auto;
 }
+.large img{
+    width: 500px;
+    height: 160px;
+    margin: 0;
+    padding-top: 40px;
+    display: flex;
+    object-position: -70px;
+    overflow: visible;
+}
+.large {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
 .navbar {
     display: flex;
 }
@@ -259,6 +273,7 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-family: monospace;
 }
 button[type=submit] {
     background-color: #1F97FD;
@@ -278,8 +293,8 @@ button[type=submit]:hover {
 .form {
     border-radius: 5px;
     background-color: white;
-    padding: 20px;
-    padding-top: 40px;
+    padding: 50px;
+    height: 100%;
 }
 #subject {
     height: 200px;
