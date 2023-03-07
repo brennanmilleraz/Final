@@ -6,6 +6,10 @@ html,body{
     margin: 0;
     font-family: 'Inter', sans-serif;
     background-color: rgb(230, 230, 230);
+    scroll-behavior: smooth;
+}
+#top {
+    height: 0;
 }
 header {
     position        : fixed;
@@ -69,7 +73,9 @@ label[for="navCheck"] {
     text-align: left;
     padding: 30px 50px;
 }
-
+.nav-fix {
+    scroll-margin-top: 110px;
+}
 .nav-list li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -265,6 +271,45 @@ label[for="navCheck"] {
 .scroll-bg1 span.me text {
     fill: url(bg2.jpeg);
 }
+.me {
+    padding:20px;    
+}
+.bio {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+#h2-fix {
+    margin: 0;
+    padding-top: 0;
+}
+.right {
+    width: 50%;
+    margin-right: 0;
+    margin-left: auto;
+}
+.profile {
+    background-color: #333;
+    width: 340px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.headshot {
+    overflow: hidden;
+    width: 340px;
+    height: 439px;
+    border-radius: 20px;
+}
+.headshot img {
+    transform: scale(180%);
+    transform-origin: 40% center;
+    object-fit: cover;
+    width: 340px;
+    height: 439px;
+}
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -359,7 +404,6 @@ button[type=submit]:hover {
     label[for="navCheck"]::after {
         top: 75%;
     }
-
     #navCheck:checked~label span {
         height: 0;
     }
@@ -373,6 +417,7 @@ button[type=submit]:hover {
         top      : 50%;
         transform: rotate(45deg);
     }
+
 }
 @media (max-width: 650px) {
     .large img {
