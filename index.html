@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brighter Web</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="icon.png">
 </head>
 <body>
   <div id="top">&nbsp;</div>
+
+  <!-- Navbar Start -->
   <header>
     <div class="container">
         <img src="LogoWhite.png" alt="Brighter Web">
@@ -28,16 +31,20 @@
       </ul>
     </section>
   </header>
+  <!-- Navbar End -->
 
   <div class="wrapper">
 
+    <!-- Typewrite Element Start-->
     <div class="fixed-bg bg-2">
       <h1 class="typewrite" data-period="2000" data-type='["Need a Professional Website?", "Brighter Web Has You Covered.", "Showcase Your Business Online.", "Endless Opportunity For an Affordable Price." ]'>
         <span class="wrap">&nbsp;</span>
       </h1>
       <script src="typewrite.js"></script>
     </div>
+    <!-- Typewrite Element End-->
 
+    <!-- Subway Map Start -->
     <div class="scroll-bg1">
       <h2 id="get-started" class="nav-fix">GET STARTED</h2>
       <div class="timeline">
@@ -75,7 +82,9 @@
         </div>
       </div>
     </div>
+    <!-- Subway Map End -->
 
+    <!-- Personal Bio Start -->
     <div class="about">
       <div class="fixed-bg bg-2 subheader">
         <h1 id="about" class="nav-fix">ABOUT</h1>
@@ -89,13 +98,20 @@
           <div class="right">
             <div class="profile">
               <div class="headshot">
-                <img src="Headshot.jpg" alt="photo">
+                <img src="Headshot.jpg" alt="">
               </div>
               <div class="media">
                 <ul>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
+                  <!-- wont be using real profiles for these -->
+                  <li><a href="https://github.com">
+                    <img src="github.svg" alt="github">
+                  </a></li>
+                  <li><a href="https://www.linkedin.com">
+                    <img src="linkedin.svg" alt="linkedin">
+                  </a></li>
+                  <li><a href="https://www.twitter.com">
+                    <img src="twitter.svg" alt="twitter">
+                  </a></li>
                 </ul>
               </div>
             </div>
@@ -103,7 +119,9 @@
         </div>
       </div>
     </div>
+    <!-- Personal Bio End -->
 
+    <!-- Contact Form Start -->
     <div class="contact">
       <div class="fixed-bg bg-2 subheader">
         <h1 id="contact" class="nav-fix">CONTACT</h1>
@@ -114,19 +132,19 @@
       </div>
 
       <div class="form">
-        <form action="/action_page.php">
-          <input type="text" id="fname" name="firstname" placeholder="Full name">
+        <form action="/mail.php">
+          <input type="text" id="fname" name="name" placeholder="Name">
 
-          <input type="text" id="lname" name="lastname" placeholder="Email">
+          <input type="text" id="email" name="email" placeholder="Email">
 
           <label for="subject"></label>
-          <textarea id="subject" name="subject" placeholder="Send me a message"></textarea>
+          <textarea id="subject" name="message" placeholder="Send me a message"></textarea>
 
-          <button type="submit" value="Submit">Submit</button>
+          <button type="submit" value="Submit">Send</button>
         </form>
       </div>
     </div>
-
+    <!-- Contact Form End -->
   </div>
 </body>
 </html>

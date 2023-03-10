@@ -109,22 +109,6 @@ label[for="navCheck"] {
     display: flex;
     justify-content: center;
 }
-.moving-bg{
-    height: 100%;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: white;
-    width: 100%;
-}
-.black-bg {
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    background-size: cover;
-    color: white;
-}
 .bg-1 {
     background-image: url(bg1.jpeg)
 }
@@ -162,7 +146,6 @@ label[for="navCheck"] {
     color: white;
 }
 .timeline {
-    background: var(white);
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
@@ -248,8 +231,6 @@ label[for="navCheck"] {
 .scroll .container {
     height: 200px;
     width: 200px;
-    position: center;
-    float: center;
     margin: auto;
 }
 .scroll .container img {
@@ -262,14 +243,6 @@ label[for="navCheck"] {
 .scroll .content {
     margin-top: 200px;
     color: white;
-}
-.scroll-bg1 span.me {
-    text-orientation: sideways-right;
-    font-size: 200%;
-    font-weight: bold;
-}
-.scroll-bg1 span.me text {
-    fill: url(bg2.jpeg);
 }
 .me {
     padding:20px;    
@@ -301,14 +274,29 @@ label[for="navCheck"] {
     overflow: hidden;
     width: 340px;
     height: 439px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .headshot img {
-    transform: scale(180%);
+    transform: scale(1.8);
     transform-origin: 40% center;
     object-fit: cover;
     width: 340px;
     height: 439px;
+}
+.media > * > * > * > * {
+    width: 40px;
+    height: 40px;
+}
+.media ul li {
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+}
+.media ul {
+    display: flex;
+    margin: auto;
+    padding: 20px;
 }
 input[type=text], select, textarea {
     width: 100%;
@@ -398,7 +386,7 @@ button[type=submit]:hover {
         height          : 2px;
         background-color: white;
         top             : 20%;
-        transition      : transform 0.s, top 0.3s;
+        transition      : transform 0.5s, top 0.3s;
     }
 
     label[for="navCheck"]::after {
@@ -411,16 +399,32 @@ button[type=submit]:hover {
     #navCheck:checked~label::before {
         top      : 50%;
         transform: rotate(-45deg);
+        transition: transform 0.2s;
     }
 
     #navCheck:checked~label::after {
         top      : 50%;
         transform: rotate(45deg);
+        transition: transform 0.2s;
     }
 
 }
 @media (max-width: 650px) {
     .large img {
         object-position: 0;
+    }
+}
+@media (max-width: 850px) {
+    .bio {
+        float: unset;
+        width: 100%;
+        text-align: center;
+    }
+    .right {
+        margin: auto;
+        width: 100%;
+    }
+    .profile {
+        margin: auto;
     }
 }
